@@ -8,8 +8,7 @@ import openai
 import PyPDF2
 import gradio as gr
 
-# Simple RAG PDF chatbot using OpenAI embeddings + FAISS
-# Keep this file small and easy to understand for beginners.
+
 
 INDEX = None
 CHUNKS: List[str] = []
@@ -147,7 +146,6 @@ def answer_question(question: str) -> str:
         return f"Error generating answer: {e}"
 
 
-# --- Gradio UI ---
 
 def main():
     with gr.Blocks() as demo:
