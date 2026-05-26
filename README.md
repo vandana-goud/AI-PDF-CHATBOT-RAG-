@@ -1,6 +1,6 @@
-# PDF RAG Chatbot (Notebook)
+# PDF RAG Chatbot
 
-A compact, beginner-friendly Retrieval-Augmented Generation (RAG) project implemented as a Jupyter notebook. Upload a PDF, index its contents, then ask questions through a simple Gradio UI.
+A compact, beginner-friendly Retrieval-Augmented Generation (RAG) project built as a small Python app. Upload a PDF, index its contents, then ask questions through a simple Gradio UI.
 
 ## Project overview
 
@@ -11,7 +11,7 @@ A compact, beginner-friendly Retrieval-Augmented Generation (RAG) project implem
 - Store embeddings in an in-memory FAISS index.
 - Retrieve relevant chunks for a user query and answer using a chat model.
 
-This repository contains both a small script (`app.py`) and a more exploratory, documented notebook `PDF_RAG_Chatbot.ipynb` intended for learning and demonstration.
+This repository contains a small script (`app.py`) that demonstrates the full workflow for a practical PDF chatbot.
 
 ## Technologies used
 
@@ -33,8 +33,7 @@ This keeps prompts focused and reduces the amount of text sent to the model.
 
 ## Folder structure
 
-- `PDF_RAG_Chatbot.ipynb` — main notebook with step-by-step code and explanations.
-- `app.py` — small Gradio script (quick demo).
+- `app.py` — main Gradio script.
 - `requirements.txt` — Python dependencies.
 - `.gitignore` — files and folders ignored by git.
 - `uploads/` — temporary uploads (ignored by git).
@@ -44,17 +43,14 @@ This keeps prompts focused and reduces the amount of text sent to the model.
 1. Clone the repo and open it in VS Code.
 2. Create and activate a virtual environment:
 
-```bash
-python -m venv .venv
-# Windows
-.venv\\Scripts\\activate
-# macOS / Linux
-source .venv/bin/activate
+```powershell
+py -3 -m venv .venv
+.venv\Scripts\activate
 ```
 
 3. Install dependencies:
 
-```bash
+```powershell
 pip install -r requirements.txt
 ```
 
@@ -67,16 +63,23 @@ setx OPENAI_API_KEY "your_api_key_here"
 # Restart your shell after setx
 ```
 
-Alternatively, you can create a `.env` file and load it in the notebook or script.
+Alternatively, you can create a `.env` file and load it in your code.
 
-## How to run the notebook in VS Code
+## How to run the app in VS Code
 
-1. Open `PDF_RAG_Chatbot.ipynb` in VS Code (it supports native notebook editing).
-2. Run cells in order. When you reach the Gradio cell, it will show a local URL to interact with the UI.
+1. Open the project folder in VS Code.
+2. Open the terminal and activate the virtual environment.
+3. Run:
+
+```powershell
+python app.py
+```
+
+4. Open the local Gradio URL shown in the terminal.
 
 ## Screenshots
 
-Include screenshots of the running app in this section for your GitHub README. For example, capture the Gradio UI and a sample Q&A.
+Add screenshots of the running app here for your GitHub README. For example, capture the Gradio UI and a sample Q&A.
 
 ## Future improvements
 
@@ -87,4 +90,4 @@ Include screenshots of the running app in this section for your GitHub README. F
 
 ## Notes
 
-This notebook is intended as a learning/portfolio piece. It is written to be clear and approachable rather than production-ready.
+This repository is intended as a learning and portfolio project. It is written to be clear and easy to follow rather than production-ready.
