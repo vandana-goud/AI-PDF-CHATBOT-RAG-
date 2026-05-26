@@ -1,7 +1,5 @@
 # PDF RAG Chatbot
 
-A compact, beginner-friendly Retrieval-Augmented Generation (RAG) project built as a small Python app. Upload a PDF, index its contents, then ask questions through a simple Gradio UI.
-
 ## Project overview
 
 - Upload a PDF file.
@@ -77,9 +75,6 @@ python app.py
 
 4. Open the local Gradio URL shown in the terminal.
 
-## Screenshots
-
-Add screenshots of the running app here for your GitHub README. For example, capture the Gradio UI and a sample Q&A.
 
 ## Future improvements
 
@@ -88,6 +83,3 @@ Add screenshots of the running app here for your GitHub README. For example, cap
 - Support multiple documents and simple metadata.
 - Add tests and CI, and provide a Dockerfile for reproducible runs.
 
-## Notes
-
-This repository is intended as a learning and portfolio project. It is written to be clear and easy to follow rather than production-ready.
